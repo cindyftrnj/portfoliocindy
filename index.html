@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jingga Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <script>
+        function showPDF() {
+            document.getElementById("pdf-container").style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h3>CINDY FITRIANA (SHE/HER)</h3>
+        <h4>FULLSTACK DEVELOPER</h4>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section class="about-me">
+                <h3>ABOUT ME</h3>
+                <h4>FULLSTACK DEVELOPER</h4>
+                <p>
+                    As a graduate in International Relations from Sriwijaya University with a GPA of 3.83, I have transitioned my focus toward the world of Fullstack Developer and UI/UX design. My academic background has honed my analytical and problem-solving skills, which I now channel into creating user-centric digital experiences.
+                </p>
+            </section>
+
+            <section class="experience">
+                <h4>EXPERIENCE</h4>
+                <h5>2024</h5>
+                <p><strong>Dicoding Indonesia</strong></p>
+                <p>Fullstack Developer</p>
+            </section>
+
+            <section class="education">
+                <h4>EDUCATION</h4>
+                <h5>2024</h5>
+                <p><strong>Sriwijaya University</strong></p>
+                <p>
+                    International Relations Major GPA 3.83/4.00
+                </p>
+
+                <button class="button" onclick="showPDF()">Resume</button>
+                <div id="pdf-container" style="display: none; margin-top: 20px;">
+                    <embed src="CV_Cindy Fitriana.pdf" type="application/pdf" width="100%" height="600px">
+                </div>
+            </section>
+        </article>
+
+        <aside>
+            <h4>Contact Me</h4>
+            <div class="Contact">
+                <ul>
+                    <li><a href="mailto:cindyftrnj@gmail.com" target="_blank" class="envelope"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="https://instagram.com/cheseyin" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" class="facebook"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/cindy-fitriana-b22217205/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <img src="jingga.png" alt="profile Cindy">
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cindy Fitriana | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

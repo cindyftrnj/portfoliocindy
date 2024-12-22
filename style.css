@@ -1,0 +1,196 @@
+*, 
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    min-height: 100vh;
+}
+
+header {
+    width: 800px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header h3 {
+    color: #3757b4;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+header h4 {
+    color: #3757b4;
+    margin-bottom: 20px;
+}
+
+header nav {
+    width: 100%;
+    margin-top: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #3757b4;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #0077B5;
+}
+
+main {
+    display: flex;
+    width: 800px;
+    gap: 20px;
+}
+
+article {
+    flex: 3;
+}
+
+article h3, article h4 {
+    color: #3757b4;
+}
+
+article section {
+    margin-bottom: 20px;
+}
+
+article .about-me h4 {
+    font-size: 28px;
+    margin: 20px 0 10px;
+}
+
+article .about-me p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+article .experience h4, article .education h4 {
+    margin-bottom: 10px;
+}
+
+article .experience h5, article .education h5 {
+    font-size: 14px;
+    color: black;
+    margin: 5px 0;
+}
+
+article .experience p, article .education p {
+    font-size: 14px;
+    color: black;
+    margin: 5px 0;
+}
+
+article .education .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3757b4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+article .education .button:hover {
+    color: #3757b4;
+    background-color: white;
+    border: 1px solid #3757b4;
+}
+
+aside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+aside h4 {
+    color: #3757b4;
+    margin-bottom: 10px;
+}
+
+aside .Contact ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+aside .Contact li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #3757b4;
+    transition: color 0.3s ease;
+}
+
+.Contact a.envelope:hover {
+    color: #D93025;
+}
+
+.Contact a.instagram:hover {
+    color: #E4405F;
+}
+
+.Contact a.twitter:hover {
+    color: #1DA1F2;
+}
+
+.Contact a.facebook:hover {
+    color: #1877F2;
+}
+
+.Contact a.linkedin:hover {
+    color: #0077B5;
+}
+
+aside img {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    max-height: 200px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
